@@ -12,7 +12,7 @@ install:
   - git clone https://github.com/dillonzq/LoveIt.git themes/loveit
 script:
   # 运行hugo命令
-  - hugo --gc --minify
+  - HUGO_ENV=production hugo -v --gc --minify
 after_script:
   # 部署
   - cd ./public
