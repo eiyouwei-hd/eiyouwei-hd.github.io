@@ -16,7 +16,7 @@ script:
 after_script:
   # 部署
   - cd ./public
-  - echo 'eiyouwei-hd.github.io' > CNAME
+#- echo 'eiyouwei-hd.github.io' > CNAME
   - git init
   - git config user.name "eiyouwei-hd"
   - git config user.email "hd.eiyouwei@gmail.com"
