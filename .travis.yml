@@ -1,0 +1,33 @@
+# Specify which branches to build using a safelist
+# 分支白名单限制：只有 master 分支的提交才会触发构建
+branches:
+  only:
+    - master
+install:
+  # 安装最新的hugo
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.58.0/hugo_0.58.0_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+  # 安装主题
+    #- git clone https://github.com/xiaoheiAh/hugo-paper.git themes/paper
+  - git clone https://github.com/dillonzq/LoveIt.git themes/loveit
+script:
+  # 运行hugo命令
+  - hugo
+after_script:
+  # 部署
+  - cd ./public
+  - echo 'eiyouwei-hd.github.io' > CNAME
+  - git init
+  - git config user.name "eiyouwei-hd"
+  - git config user.email "hd.eiyouwei@gmail.com"
+  - git add .
+  - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  # Github Pages
+  - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
+  # Github Pages
+  - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
+  - cd ..
+env:
+ global:
+   # Github Pages
+   - GH_REF: github.com/eiyouwei-hd/eiyouwei-hd.github.io.git
