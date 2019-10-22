@@ -1,3 +1,4 @@
++++
 title = "java容器简介"
 date = "2019-10-22"
 description = "java容器简介"
@@ -8,6 +9,9 @@ tags = [
 categories = [
     "集合"
 ]
++++
+
+<!--more-->
 
 # Java容器-简介
 

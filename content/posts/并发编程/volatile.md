@@ -1,3 +1,4 @@
++++
 title = "volatile原理"
 date = "2019-10-22"
 description = "volatile原理"
@@ -8,6 +9,9 @@ tags = [
 categories = [
     "并发编程"
 ]
+
++++
+<!--more-->
 
 ## volatile
 

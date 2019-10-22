@@ -1,3 +1,4 @@
++++
 title = "j.u.c_AQS"
 date = "2019-10-22"
 description = "j.u.c_AQS"
@@ -9,8 +10,8 @@ tags = [
 categories = [
     "并发编程"
 ]
-
-------
++++
+<!--more-->
 
 
 

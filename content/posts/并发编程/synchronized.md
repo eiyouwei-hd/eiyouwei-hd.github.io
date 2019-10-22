@@ -1,3 +1,5 @@
++++
+
 title = "synchronized原理"
 date = "2019-10-22"
 description = "synchronized原理"
@@ -8,6 +10,9 @@ tags = [
 categories = [
     "并发编程"
 ]
+
++++
+<!--more-->
 
 ## 实现原理
 
