@@ -1,14 +1,14 @@
-baseURL = "https://xiaohei.im/"
+baseURL = "https://eiyouwei-hd.github.io/"
 languageCode = "en"                                      # website language
 defaultContentLanguage = "zh"                            # [en, zh, ...] determines which i18n file to use
-title = "xiaohei's home | Java Developer"                                   # website title
+title = "eiyouwei's home | Java Developer"                                   # website title
 theme = "loveit"                                         # theme
 enableGitInfo = false                                    # whether to use git commit log to generate lastmod record
 hasCJKLanguage = true					 # whether to include chinese/japanese/korean
 paginate = 20                                             # amount of posts in each page only when home_mode is post
 enableEmoji = true                                       # whether to use emoji code
 enableRobotsTXT = true                                   # whether to use robots.txt
-googleAnalytics = "UA-98254666-1"                                     # [UA-XXXXXXXX-X] google analytics code
+googleAnalytics = ""                                     # [UA-XXXXXXXX-X] google analytics code
 disqusShortname = ""                             # Disqus shortname to use Disqus in posts
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
                                                          # copyright description used only for seo schema
@@ -22,7 +22,7 @@ pygmentsCodefencesGuessSyntax = true
 staticDir = ["static", "../assets/others"]               # static directories
 
 [author]                                              #### Author Info
-  name = "xiaoheiAh"
+  name = "eiyouwei"
 
 [sitemap]                                             #### Sitemap Info
   changefreq = "weekly"
@@ -59,7 +59,7 @@ staticDir = ["static", "../assets/others"]               # static directories
 
 [params]
   version = "5.x"                                        # LoveIt theme version
-  description = "赵小黑的各种记录"                      # site description
+  description = "诶呦喂的各种记录"                      # site description
   keywords = ["Java", "学习", "Hugo"]                   # site keywords
 
                                                       #### Home Page Info
